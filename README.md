@@ -80,6 +80,104 @@ Supported values:
 - `light` (default)
 - `dark`
 
+## Using this in future projects
+
+1. Install the package:
+
+```bash
+npm install yashrajnayak-design-system
+```
+
+2. Load required fonts once in your app shell (`index.html`, `app/layout.tsx`, etc.):
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+```
+
+3. Import the design system stylesheet once near app startup:
+
+```js
+import 'yashrajnayak-design-system/dist/yashrajnayak-design-system.css';
+```
+
+4. Use `ys-` classes for components and utilities, and use `--ys-*` variables for custom styles.
+
+5. Use theme switching by setting `data-theme` on `<html>`:
+
+```js
+document.documentElement.setAttribute('data-theme', 'dark');
+```
+
+## Migrating existing projects to this design system
+
+Use an incremental migration, not a full rewrite.
+
+1. Install and import the design system, while keeping your current CSS.
+2. Start migrating shared primitives first: buttons, cards, headings/text styles, and spacing/layout wrappers.
+3. Migrate one screen/section at a time to reduce regressions.
+4. Remove old component CSS only after that section visually matches and passes smoke checks.
+
+If your app has old token names, add a temporary bridge in your app CSS:
+
+```css
+:root {
+  --old-primary: var(--ys-color-primary);
+  --old-surface: var(--ys-color-surface);
+  --old-text: var(--ys-color-text);
+}
+```
+
+## Updating all apps when the design system changes
+
+### Release workflow for this repo
+
+1. Update design system code.
+2. Bump version in `package.json` (`patch`, `minor`, or `major`).
+3. Build and publish:
+
+```bash
+npm run build
+npm publish --access public
+```
+
+### Consumer app strategy
+
+1. Pin a compatible major version in each app, for example:
+
+```json
+"dependencies": {
+  "yashrajnayak-design-system": "^1.2.0"
+}
+```
+
+2. Enable dependency update PRs (Dependabot or Renovate) in every app repo so each new release opens an update PR automatically.
+
+Sample Dependabot config:
+
+```yaml
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+```
+
+3. Merge update PRs after a quick visual smoke test.
+
+### Manual multi-repo update (optional)
+
+If you want to update local repos in bulk:
+
+```bash
+for repo in ~/Documents/GitHub/*; do
+  if [ -f "$repo/package.json" ] && rg -q "\"yashrajnayak-design-system\"" "$repo/package.json"; then
+    (cd "$repo" && npm install yashrajnayak-design-system@latest)
+  fi
+done
+```
+
 ## Publish as a GitHub repo
 
 ```bash
