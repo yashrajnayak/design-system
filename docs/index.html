@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Design System</title>
+  <meta name="description" content="Reusable design system extracted from yashrajnayak.github.io">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../dist/yash-design-system.css">
+  <link rel="stylesheet" href="./docs.css">
+</head>
+<body>
+  <button class="ys-theme-switch" id="themeSwitch" aria-label="Toggle dark/light theme">
+    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="5" />
+      <line x1="12" y1="1" x2="12" y2="3" />
+      <line x1="12" y1="21" x2="12" y2="23" />
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+      <line x1="1" y1="12" x2="3" y2="12" />
+      <line x1="21" y1="12" x2="23" y2="12" />
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+    </svg>
+    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+    </svg>
+  </button>
+
+  <main class="ys-container">
+    <header class="ys-section docs-header ys-animate-fade-in">
+      <h1 class="ys-page-title">Yash Design System</h1>
+      <p class="ys-page-subtitle">A reusable token and component library based on yashrajnayak.github.io.</p>
+      <div class="ys-cluster ys-text-center" style="justify-content: center; margin-top: 1.5rem;">
+        <a class="ys-button ys-button--primary" href="../README.md">Read docs</a>
+        <a class="ys-button ys-button--secondary" href="https://github.com/new" target="_blank" rel="noreferrer">Publish repo</a>
+      </div>
+    </header>
+
+    <section class="ys-section ys-animate-slide-up">
+      <h2 class="ys-section-title">Color Tokens</h2>
+      <div class="docs-swatch-grid">
+        <div class="docs-swatch">
+          <div class="docs-swatch__color" style="background: var(--ys-color-primary);"></div>
+          <div class="docs-swatch__meta">
+            <p class="docs-swatch__name">Primary</p>
+            <p class="docs-swatch__token">--ys-color-primary</p>
+          </div>
+        </div>
+        <div class="docs-swatch">
+          <div class="docs-swatch__color" style="background: var(--ys-color-primary-dark);"></div>
+          <div class="docs-swatch__meta">
+            <p class="docs-swatch__name">Primary Dark</p>
+            <p class="docs-swatch__token">--ys-color-primary-dark</p>
+          </div>
+        </div>
+        <div class="docs-swatch">
+          <div class="docs-swatch__color" style="background: var(--ys-color-background);"></div>
+          <div class="docs-swatch__meta">
+            <p class="docs-swatch__name">Background</p>
+            <p class="docs-swatch__token">--ys-color-background</p>
+          </div>
+        </div>
+        <div class="docs-swatch">
+          <div class="docs-swatch__color" style="background: var(--ys-color-surface);"></div>
+          <div class="docs-swatch__meta">
+            <p class="docs-swatch__name">Surface</p>
+            <p class="docs-swatch__token">--ys-color-surface</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ys-section ys-animate-slide-up">
+      <h2 class="ys-section-title">Typography</h2>
+      <div class="ys-card ys-stack-2">
+        <h1 class="ys-page-title" style="font-size: clamp(2rem, 5vw, 3rem);">Outfit for display</h1>
+        <p style="font-size: 1rem; color: var(--ys-color-text-muted);">Inter for body copy creates a readable, modern baseline for content-heavy pages.</p>
+        <code class="docs-code">font-family: var(--ys-font-display); and font-family: var(--ys-font-sans);</code>
+      </div>
+    </section>
+
+    <section class="ys-section ys-animate-slide-up">
+      <h2 class="ys-section-title">Component Library</h2>
+      <div class="docs-demo-grid">
+        <article class="ys-glass-card ys-stack-2" style="padding: 1.5rem;">
+          <div class="ys-cluster">
+            <span class="ys-badge">Badge</span>
+            <span class="ys-chip">Token-based</span>
+          </div>
+          <h3>Glass Card</h3>
+          <ul class="ys-list">
+            <li>Translucent surface and blur</li>
+            <li>Primary accent top border</li>
+            <li>Hover elevation behavior</li>
+          </ul>
+        </article>
+
+        <article class="ys-card ys-stack-2">
+          <h3>Buttons & Pills</h3>
+          <div class="ys-cluster">
+            <button class="ys-button ys-button--primary">Primary</button>
+            <button class="ys-button ys-button--secondary">Secondary</button>
+            <button class="ys-button ys-button--ghost">Ghost</button>
+          </div>
+          <a href="#" class="ys-pill-link">Pill Link</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="ys-section ys-animate-slide-up">
+      <h2 class="ys-section-title">Accordion Pattern</h2>
+      <details class="ys-accordion" open>
+        <summary>Reusable details/summary block <span class="ys-text-muted">v1</span></summary>
+        <div class="ys-accordion__content">
+          <p>This pattern mirrors the expandable information layout used in your app for long-form sections like experience and projects.</p>
+          <code class="docs-code">&lt;details class="ys-accordion"&gt;...&lt;/details&gt;</code>
+        </div>
+      </details>
+    </section>
+
+    <section class="ys-section ys-animate-slide-up">
+      <h2 class="ys-section-title">Starter Markup</h2>
+      <code class="docs-code">&lt;link rel="stylesheet" href="dist/yash-design-system.css"&gt;
+&lt;main class="ys-container"&gt;
+  &lt;section class="ys-section"&gt;
+    &lt;h2 class="ys-section-title"&gt;Section&lt;/h2&gt;
+    &lt;article class="ys-card ys-stack-2"&gt;...&lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</code>
+    </section>
+
+    <footer class="docs-footer">
+      <p>Design language: extracted from yashrajnayak.github.io and packaged for reuse.</p>
+    </footer>
+  </main>
+
+  <script src="./docs.js"></script>
+</body>
+</html>

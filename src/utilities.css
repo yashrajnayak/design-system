@@ -1,0 +1,74 @@
+.ys-text-primary {
+  color: var(--ys-color-primary);
+}
+
+.ys-text-muted {
+  color: var(--ys-color-text-muted);
+}
+
+.ys-text-center {
+  text-align: center;
+}
+
+.ys-mb-1 {
+  margin-bottom: var(--ys-space-4);
+}
+
+.ys-mb-2 {
+  margin-bottom: var(--ys-space-8);
+}
+
+.ys-mb-4 {
+  margin-bottom: var(--ys-space-16);
+}
+
+.ys-mt-1 {
+  margin-top: var(--ys-space-4);
+}
+
+.ys-mt-2 {
+  margin-top: var(--ys-space-8);
+}
+
+.ys-inline {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ys-cluster {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.ys-stack-1 > * + * {
+  margin-top: var(--ys-space-4);
+}
+
+.ys-stack-2 > * + * {
+  margin-top: var(--ys-space-8);
+}
+
+.ys-stack-3 > * + * {
+  margin-top: var(--ys-space-12);
+}
+
+.ys-surface {
+  background: var(--ys-color-surface);
+}
+
+.ys-rounded {
+  border-radius: var(--ys-radius-xl);
+}
+
+.ys-shadow {
+  box-shadow: var(--ys-shadow-sm);
+}
+
+@media (max-width: 768px) {
+  .ys-container {
+    width: 95%;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,76 @@
+body {
+  padding-top: 4.5rem;
+}
+
+.docs-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.docs-swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.docs-swatch {
+  border: 1px solid var(--ys-color-border);
+  border-radius: var(--ys-radius-lg);
+  background: var(--ys-color-surface);
+  overflow: hidden;
+}
+
+.docs-swatch__color {
+  height: 78px;
+}
+
+.docs-swatch__meta {
+  padding: 0.75rem;
+}
+
+.docs-swatch__name {
+  font-weight: 700;
+  color: var(--ys-color-text);
+  margin-bottom: 0.15rem;
+}
+
+.docs-swatch__token {
+  font-size: 0.8rem;
+  color: var(--ys-color-text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+.docs-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.docs-code {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border-radius: var(--ys-radius-md);
+  border: 1px solid var(--ys-color-border);
+  background: rgba(148, 163, 184, 0.12);
+  color: var(--ys-color-text);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  overflow-x: auto;
+}
+
+.docs-footer {
+  text-align: center;
+  border-top: 1px solid var(--ys-color-border);
+  margin-top: 4rem;
+  padding-top: 2rem;
+  color: var(--ys-color-text-muted);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 3.75rem;
+  }
+}

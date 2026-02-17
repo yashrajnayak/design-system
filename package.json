@@ -1,0 +1,26 @@
+{
+  "name": "yash-design-system",
+  "version": "0.1.0",
+  "description": "Reusable design system extracted from yashrajnayak.github.io",
+  "type": "module",
+  "style": "dist/yash-design-system.css",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "dev": "python3 -m http.server 4173 -d docs"
+  },
+  "keywords": [
+    "design-system",
+    "css",
+    "tokens",
+    "components",
+    "portfolio"
+  ],
+  "author": "Yashraj Nayak",
+  "license": "MIT"
+}

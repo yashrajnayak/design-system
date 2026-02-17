@@ -1,0 +1,45 @@
+@keyframes ys-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ys-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ys-pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ys-animate-fade-in {
+  animation: ys-fade-in 0.5s ease;
+}
+
+.ys-animate-slide-up {
+  animation: ys-slide-up 0.5s ease;
+}
+
+.ys-animate-pop-in {
+  animation: ys-pop-in 0.35s ease;
+}
