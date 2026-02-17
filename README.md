@@ -1,6 +1,6 @@
 # Design System
 
-Reusable design system extracted from [`yashrajnayak.github.io`](https://github.com/yashrajnayak/yashrajnayak.github.io), packaged as a standalone repo so you can reuse the same visual language across future projects.
+Reusable design system extracted from [`yashrajnayak.github.io`](https://github.com/yashrajnayak/yashrajnayak.github.io), packaged as a standalone repo for reusing the same visual language across future projects.
 
 ## What this includes
 
