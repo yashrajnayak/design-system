@@ -1,4 +1,4 @@
-# Yash Design System
+# Design System
 
 Reusable design system extracted from [`yashrajnayak.github.io`](https://github.com/yashrajnayak/yashrajnayak.github.io), packaged as a standalone repo so you can reuse the same visual language across future projects.
 
