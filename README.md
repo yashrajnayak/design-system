@@ -178,25 +178,6 @@ for repo in ~/Documents/GitHub/*; do
 done
 ```
 
-## Publish as a GitHub repo
-
-```bash
-git remote add origin git@github.com:yashrajnayak/design-system.git
-git branch -M main
-git add .
-git commit -m "Initial design system"
-git push -u origin main
-```
-
-## Publish to npm
-
-Before publishing, ensure the package name in `package.json` is available.
-
-```bash
-npm login
-npm publish --access public
-```
-
 ## Versioning recommendation
 
 - `patch`: small non-breaking fixes
