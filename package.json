@@ -1,9 +1,17 @@
 {
-  "name": "yash-design-system",
+  "name": "yashrajnayak-design-system",
   "version": "0.1.0",
   "description": "Reusable design system extracted from yashrajnayak.github.io",
   "type": "module",
-  "style": "dist/yash-design-system.css",
+  "style": "dist/yashrajnayak-design-system.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashrajnayak/design-system.git"
+  },
+  "homepage": "https://github.com/yashrajnayak/design-system#readme",
+  "bugs": {
+    "url": "https://github.com/yashrajnayak/design-system/issues"
+  },
   "files": [
     "dist",
     "src",

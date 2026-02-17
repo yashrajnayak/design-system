@@ -13,7 +13,7 @@ Reusable design system extracted from [`yashrajnayak.github.io`](https://github.
 ## Project structure
 
 ```
-yash-design-system/
+design-system/
   src/
     tokens.css
     base.css
@@ -23,8 +23,8 @@ yash-design-system/
     themes.css
     index.css
   dist/
-    yash-design-system.css
-    yash-design-system.min.css
+    yashrajnayak-design-system.css
+    yashrajnayak-design-system.min.css
   docs/
     index.html
     docs.css
@@ -40,7 +40,7 @@ npm run build
 npm run dev
 ```
 
-- Build output: `dist/yash-design-system.css`
+- Build output: `dist/yashrajnayak-design-system.css`
 - Docs preview: `http://localhost:4173`
 
 ## Use in another project
@@ -48,17 +48,17 @@ npm run dev
 ### Option 1: copy CSS directly
 
 ```html
-<link rel="stylesheet" href="/path/to/yash-design-system.css">
+<link rel="stylesheet" href="/path/to/yashrajnayak-design-system.css">
 ```
 
 ### Option 2: install from npm (after publish)
 
 ```bash
-npm install yash-design-system
+npm install yashrajnayak-design-system
 ```
 
 ```js
-import 'yash-design-system/dist/yash-design-system.css';
+import 'yashrajnayak-design-system/dist/yashrajnayak-design-system.css';
 ```
 
 ## Required fonts
@@ -83,7 +83,7 @@ Supported values:
 ## Publish as a GitHub repo
 
 ```bash
-git remote add origin git@github.com:<your-username>/yash-design-system.git
+git remote add origin git@github.com:yashrajnayak/design-system.git
 git branch -M main
 git add .
 git commit -m "Initial design system"
@@ -104,4 +104,3 @@ npm publish --access public
 - `patch`: small non-breaking fixes
 - `minor`: new components or utility classes
 - `major`: breaking token or class name changes
-

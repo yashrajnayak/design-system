@@ -14,8 +14,8 @@ cat \
   "$SRC_DIR/components.css" \
   "$SRC_DIR/utilities.css" \
   "$SRC_DIR/themes.css" \
-  > "$DIST_DIR/yash-design-system.css"
+  > "$DIST_DIR/yashrajnayak-design-system.css"
 
-cp "$DIST_DIR/yash-design-system.css" "$DIST_DIR/yash-design-system.min.css"
+cp "$DIST_DIR/yashrajnayak-design-system.css" "$DIST_DIR/yashrajnayak-design-system.min.css"
 
-echo "Built $DIST_DIR/yash-design-system.css"
+echo "Built $DIST_DIR/yashrajnayak-design-system.css"
