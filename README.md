@@ -41,7 +41,7 @@ npm run dev
 ```
 
 - Build output: `dist/yashrajnayak-design-system.css`
-- Docs preview: `http://localhost:4173`
+- Docs preview: `http://localhost:4173/docs/`
 
 ## Use in another project
 
